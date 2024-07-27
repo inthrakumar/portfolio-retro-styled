@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Press_Start_2P } from "next/font/google";
 import "./globals.css";
-const inter = Inter({ subsets: ["latin"] });
+import 'nes.css/css/nes.min.css'
+const Press_start = Press_Start_2P({ weight: '400', subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Protfolio",
-  description: "Retro Styled Protfolio from Inthra kumar",
+  title: "IK PORTFOLIO",
+  description: "Retro-Styled-Portfolio",
 };
 
 export default function RootLayout({
@@ -15,10 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        
-      </head>
-      <body className={inter.className}>{children}</body>
+
+      <body className={Press_start.className}>{children}</body>
     </html>
   );
 }
