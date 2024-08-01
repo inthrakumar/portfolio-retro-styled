@@ -28,4 +28,18 @@ type SubmissionsData = {
   submission: Submission[];
 };
 
-export type { UserProfile, SubmissionsData };
+interface SubmissionStats {
+  difficulty: string;
+  count: number;
+  submissions: number;
+}
+
+type NoofQns = {
+  solvedProblem: number;
+  easySolved: number;
+  mediumSolved: number;
+  hardSolved: number;
+  totalSubmissionNum: SubmissionStats[];
+  acSubmissionNum: SubmissionStats[];
+};
+export type { UserProfile, SubmissionsData, NoofQns };

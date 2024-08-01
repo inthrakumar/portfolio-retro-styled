@@ -5,7 +5,7 @@ const Press_start = Press_Start_2P({ weight: '400', subsets: ["latin"] });
 import Header from "@/components/Header";
 import Body from "@/components/Body";
 export const metadata: Metadata = {
-  title: "IK PORTFOLIO",
+  title: "Inthra Kumar",
   description: "Retro-Styled-Portfolio",
 };
 import Provider from './utils/Provider';
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body className={`${Press_start.className} flex flex-col min-h-screen  bg-cover bg-no-repeat`} style={{ backgroundImage: `url(${bg.src})` }}>
+      <body className={`${Press_start.className}  flex flex-col min-h-screen  bg-cover bg-no-repeat gap-3`} style={{ backgroundImage: `url(${bg.src})` }}>
 
         <Header />
 

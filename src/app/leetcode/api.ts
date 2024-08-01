@@ -10,6 +10,17 @@ const getAccountDetails = async (): Promise<UserProfile | null> => {
   }
 };
 
+const NoofQns = async () => {
+  try {
+    const url = `https://alfa-leetcode-api.onrender.com/inthrak04/solved`;
+    const response = await axios.get(url, {});
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    return;
+  }
+};
+
 const AcceptedSubmissions = async (): Promise<SubmissionsData | null> => {
   const url = `https://alfa-leetcode-api.onrender.com/inthrak04/acSubmission?limit=10`;
   try {
@@ -20,4 +31,4 @@ const AcceptedSubmissions = async (): Promise<SubmissionsData | null> => {
   }
 };
 
-export { getAccountDetails, AcceptedSubmissions };
+export { getAccountDetails, AcceptedSubmissions, NoofQns };
