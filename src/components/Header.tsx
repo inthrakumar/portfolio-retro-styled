@@ -1,10 +1,26 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-
+import gsap from 'gsap';
 function Header() {
+    const mario = useRef(null);
+    const dino = useRef(null);
     const [isScrolled, setIsScrolled] = useState(false);
-
+    useEffect(() => {
+        gsap.to(mario.current, {
+            repeat: -1,
+            yoyo: true,
+            rotation: 30,
+            ease: 'elastic'
+        })
+        gsap.to(dino.current, {
+            repeat: -1,
+            yoyo: true,
+            rotation: 30,
+            ease: 'elastic',
+            delay: 1
+        })
+    }, [])
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
@@ -24,8 +40,8 @@ function Header() {
     return (
         <section className="w-full mt-5 mr-7">
             <section className={`icon-list flex w-fit gap-4 fixed top-4 left-2 max-sm:hidden ${isScrolled ? 'hidden' : ''}`}>
-                <i className="nes-mario"></i>
-                <i className="nes-charmander"></i>
+                <i className="nes-mario" ref={mario}></i>
+                <i className="nes-charmander" ref={dino}></i>
             </section>
             <div className="w-full flex gap-3 max-sm:gap-1 items-center justify-end">
                 <Link href="/leetcode">
