@@ -32,16 +32,12 @@ export default function Home() {
       style={{ backgroundImage: `url(${bg.src})` }}
     >
       <section className="w-full mt-5 mr-7">
+        <section className="icon-list flex w-fit gap-4 fixed top-4 left-2 max-sm:hidden ">
+          <i className="nes-mario "></i>
+          <i className="nes-charmander "></i>
+
+        </section>
         <div className="w-full flex gap-3 max-sm:gap-1 items-center justify-end">
-
-
-          <Link href="/about">
-            <button type="button" className="nes-btn is-error max-sm:px-[1px] max-sm:py-[2px] max-sm:text-[6px]">
-              About
-            </button>
-          </Link>
-
-
           <Link href="/leetcode">
             <button type="button" className="nes-btn is-error max-sm:px-[1px] max-sm:py-[2px] max-sm:text-[6px]">
               LeetCode
@@ -64,13 +60,15 @@ export default function Home() {
 
       </section>
       <section className="mt-5 w-full flex-grow flex items-center justify-center max-sm:mt-3">
-        <div className="bg-white nes-container is-centered is-rounded flex flex-col gap-7">
+        <div className="bg-white nes-container max-w-[80vw] is-centered is-rounded flex flex-col gap-7">
           <p className={`text-6xl max-sm:text-3xl ${Nametext.className}`}>INTHRAKUMAR</p>
-          <p className={`w-56 text-left max-sm:text-2xl ${font.className} text-[2rem]`}>
-            <span className='text-nowrap' ref={el}></span>
+          <p className={`w-56 text-center max-sm:text-xl ${font.className} text-[2rem]`}>
+            <span className='text-nowrap text-center' ref={el}></span>
           </p>
+          <p className={` text-xl max-sm:text-base ${font.className} flex flex-col gap-2`}>pursing B.tech Cse in <span className='text-nowrap max-sm:text-[12px]'>Indian Institute of information technology</span><span className='max-sm:text-[12px]'>Sricity</span></p>
         </div>
       </section>
+      <div className="social-buttons fixed bottom-3 right-3 "><p className='max-sm:text-[10px]'>Connect on SNS</p> <div className="share"><Link href="" target="_blank"><i className="nes-icon twitter  max-sm:is-small"></i></Link> <Link href="" target="_blank"><i className="nes-icon facebook"></i></Link> <Link href="" target="_blank"><i className="nes-icon linkedin"></i></Link> <Link href="" target="_blank"><i className="nes-icon github"></i></Link></div></div>
     </main>
   );
 }
