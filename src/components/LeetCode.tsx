@@ -16,7 +16,7 @@ function LeetCode({ data, Submissions, Qns }: LeetCodeDataSource) {
     return (
         <div className='h-inherit w-100vw flex flex-col gap-7 mt-6 max-lg:mt-8 max-sm:p-4'>
             <div className='text-3xl max-lg:text-2xl max-sm:text-lg'>{data?.name}</div>
-            <div className='flex gap-1 text-2xl max-lg:text-xl max-sm:text-base'>UserName: <span>{data?.username}</span></div>
+            <div className='flex gap-1 text-2xl max-lg:text-xl max-sm:text-base'>UserName: <span><Link href={'https://leetcode.com/u/inthrak04/'} target='_blank' className='no-underline text-black hover:text-black'>{data?.username}</Link></span></div>
             <div className={` max-w-[40vw] flex flex-col text-xl w-full h-fit gap-3 bg-white rounded-md p-4 max-sm:p-2 max-lg:text-base max-sm:text-[10px]`}>
                 <div>All: {Qns?.solvedProblem}</div>
                 <div>Easy: {Qns?.easySolved}</div>
