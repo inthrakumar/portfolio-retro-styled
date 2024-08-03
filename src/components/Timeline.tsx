@@ -1,10 +1,13 @@
 import React from 'react';
+import { DiNodejs } from 'react-icons/di';
+import { FaReact } from 'react-icons/fa';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { TbBrandNextjs } from 'react-icons/tb';
 
 function Timeline() {
     return (
-        <div className='flex flex-col w-full  gap-2 items-center jusitfy-center'>
+        <div className='flex flex-col w-full  gap-2 items-center justify-center'>
             <VerticalTimeline className='visible'>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education "
@@ -12,7 +15,8 @@ function Timeline() {
                     contentArrowStyle={{ borderRight: '7px solid  #FFD700' }}
                     date="March-April 2024"
                     dateClassName='!text-#000 max-sm:!text-[8px]'
-                    iconStyle={{ background: '#FFD700', color: '#000' }}
+                    iconStyle={{ background: '#FFF', color: '#000' }}
+                    icon={<DiNodejs size={30} />}
                     visible={true}
                 >
                     <h3 className="vertical-timeline-element-title whitespace-nowrap text-2xl max-sm:text-xs">Celestial Trust</h3>
@@ -23,13 +27,13 @@ function Timeline() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work "
+                    className="vertical-timeline-element--work  w-fit"
                     date="June 2024"
                     dateClassName='!text-#000 max-sm:!text-[8px]'
                     contentStyle={{ background: '#FF4500', color: '#000' }}
                     contentArrowStyle={{ borderRight: '7px solid  #FF4500' }}
-                    iconStyle={{ background: '#FF4500', color: '#000' }}
-                    visible={true}
+                    iconStyle={{ background: '#FFF', color: '#000' }}
+                    icon={<FaReact size={30} />} visible={true}
                 >
                     <h3 className="vertical-timeline-element-title whitespace-nowrap text-2xl max-sm:text-xs">NewsBuzz</h3>
                     <h4 className="vertical-timeline-element-subtitle whitespace-nowrap text-xl max-sm:text-[10px]">Reactjs</h4>
@@ -39,13 +43,13 @@ function Timeline() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work "
+                    className="vertical-timeline-element--work  w-fit"
                     date="July 2024"
                     dateClassName='!text-#000 max-sm:!text-[8px]'
                     contentStyle={{ background: '#8A2BE2', color: '#000' }}
                     contentArrowStyle={{ borderRight: '7px solid  #8A2BE2' }}
-                    iconStyle={{ background: '#8A2BE2', color: '#000' }}
-                    visible={true}
+                    iconStyle={{ background: '#FFF', color: '#000' }}
+                    icon={< TbBrandNextjs size={30} />} visible={true}
                 >
                     <h3 className="vertical-timeline-element-title whitespace-nowrap text-2xl max-sm:text-xs">RetroStylePortfolio</h3>
                     <h4 className="vertical-timeline-element-subtitle whitespace-nowrap text-xl max-sm:text-[10px]">Nextjs</h4>

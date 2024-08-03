@@ -44,6 +44,11 @@ function Header() {
                 <i className="nes-charmander" ref={dino}></i>
             </section>
             <div className="w-full flex gap-3 max-sm:gap-1 items-center justify-end">
+                <Link href="/">
+                    <button type="button" className="nes-btn is-error max-sm:px-[1px] max-sm:py-[2px] max-sm:text-[6px]">
+                        Home
+                    </button>
+                </Link>
                 <Link href="/leetcode">
                     <button type="button" className="nes-btn is-error max-sm:px-[1px] max-sm:py-[2px] max-sm:text-[6px]">
                         LeetCode
