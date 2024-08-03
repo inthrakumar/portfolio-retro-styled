@@ -1,20 +1,12 @@
 "use client";
 
 import React from 'react';
-import { Metadata } from 'next';
 
-// Define the getMetadata function
-export const getMetadata = ({ params }: { params: { project: string } }): Metadata => {
-    return {
-        title: params.project,
-        description: `Project: ${params.project}`,
-    };
-};
 
 
 function Page({ params }: { params: { project: string } }) {
     return (
-        <div>
+        <div className='m-10 mt-20 flex items-center justify-center'>
             <h1>{params.project}</h1>
 
         </div>
