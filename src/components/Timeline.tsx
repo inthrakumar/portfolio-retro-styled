@@ -46,9 +46,9 @@ function Timeline() {
                     <p><span><Link className='!text-[#000] max-sm:!text-[6px]' href={'/projects/news-buzz'}>More</Link></span></p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work  w-fit"
+                    className="vertical-timeline-element--work  w-fit max-sm:!p-3"
                     date="July 2024"
-                    dateClassName='!text-#000 max-sm:!text-[8px]'
+                    dateClassName='!text-#000 max-sm:!text-[8px] '
                     contentStyle={{ background: '#8A2BE2', color: '#000' }}
                     contentArrowStyle={{ borderRight: '7px solid  #8A2BE2' }}
                     iconStyle={{ background: '#FFF', color: '#000' }}
