@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { Atomic_Age } from 'next/font/google';
 import localFont from 'next/font/local';
 import Typed from 'typed.js';
-import { useGSAP } from '@gsap/react';
 const font = Atomic_Age({ weight: '400', subsets: ["latin"] });
 const Nametext = localFont({ src: '../font/fifties_movies/Fifties Movies.woff2' });
 import gsap from 'gsap';
