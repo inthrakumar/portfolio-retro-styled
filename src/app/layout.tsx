@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body className={`${Press_start.className}  flex flex-col min-h-screen  bg-cover bg-no-repeat gap-3 overflow-y-auto`} style={{ backgroundImage: `url(${bg.src})` }}>
+      <body className={`${Press_start.className}  flex flex-col min-h-screen  bg-cover bg-repeat-y gap-3 max-sm:gap-1 overflow-scrolls`} style={{ backgroundImage: `url(${bg.src})` }}>
 
         <Header />
 
