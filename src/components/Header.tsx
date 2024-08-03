@@ -39,7 +39,7 @@ function Header() {
 
     return (
         <section className="w-full mt-5 mr-7">
-            <section className={`icon-list flex w-fit gap-4 fixed top-4 left-2 max-sm:hidden ${isScrolled ? 'hidden' : ''}`}>
+            <section className={`icon-list flex w-fit gap-4 max-lg:gap-1 fixed top-4 left-2 max-sm:hidden ${isScrolled ? 'hidden' : ''}`}>
                 <i className="nes-mario" ref={mario}></i>
                 <i className="nes-charmander" ref={dino}></i>
             </section>
