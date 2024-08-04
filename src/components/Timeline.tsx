@@ -54,7 +54,7 @@ function Timeline() {
                     iconStyle={{ background: '#FFF', color: '#000' }}
                     icon={< TbBrandNextjs size={30} />} visible={true}
                 >
-                    <h3 className="vertical-timeline-element-title whitespace-nowrap text-2xl max-sm:text-xs">RetroStylePortfolio</h3>
+                    <h3 className="vertical-timeline-element-title whitespace-nowrap text-2xl max-sm:text-xs">Portfolio</h3>
                     <h4 className="vertical-timeline-element-subtitle whitespace-nowrap text-xl max-sm:text-[10px]">Nextjs</h4>
                     <p className='text-lg max-sm:!text-[8px]'>
                         Portfolio website which was created by using react framework nextjs. Nescss and Tailwind have been used for styling and providing the retro effect.
