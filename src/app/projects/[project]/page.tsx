@@ -1,14 +1,16 @@
 "use client";
 
 import React from 'react';
-
-
+import map from '../../../projects_assests/details'
+import * as icons from 'react-icons/fa';
 
 function Page({ params }: { params: { project: string } }) {
+    const projectDetails = map.get(params.project);
+    const IconComponent = projectDetails?.TechIcons[0];
+
     return (
         <div className='m-10 mt-20 flex items-center justify-center'>
-            <h1>{params.project}</h1>
-
+            {IconComponent && <IconComponent />}
         </div>
     );
 }

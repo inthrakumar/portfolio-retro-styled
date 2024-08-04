@@ -26,7 +26,7 @@ function Timeline() {
                         Celestial Trust is a web platform that provides a seamless experience for people to connect with trust and donate.
                         Trusts also promote their work and receive donations from all over the web.
                     </p>
-                    <p><span><Link className='!text-[#000] max-sm:!text-[6px] max-sm:!mt-2' href={'/projects/celestial-trust'}>More</Link></span></p>
+                    <p><span><Link className='!text-[#000] max-sm:!text-[6px] max-sm:!mt-2' href={'/projects/CelestialTrust'}>More</Link></span></p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work  w-fit"
@@ -43,7 +43,7 @@ function Timeline() {
                         NewsBuzz is a web platform that provides users with the latest news, breaking news, and opinion articles.
                         WorldNewsApi has been used.
                     </p>
-                    <p><span><Link className='!text-[#000] max-sm:!text-[6px]' href={'/projects/news-buzz'}>More</Link></span></p>
+                    <p><span><Link className='!text-[#000] max-sm:!text-[6px]' href={'/projects/NewsBuzz'}>More</Link></span></p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work  w-fit max-sm:!p-3"
@@ -59,7 +59,7 @@ function Timeline() {
                     <p className='text-lg max-sm:!text-[8px]'>
                         Portfolio website which was created by using react framework nextjs. Nescss and Tailwind have been used for styling and providing the retro effect.
                     </p>
-                    <p><span><Link className='!text-[#000] max-sm:!text-[6px]' href={'/projects/portfolio'}>More</Link></span></p>
+                    <p><span><Link className='!text-[#000] max-sm:!text-[6px]' href={'/projects/Portfolio'}>More</Link></span></p>
                 </VerticalTimelineElement>
             </VerticalTimeline>
         </div>
