@@ -2,7 +2,6 @@
 
 import React from 'react';
 import map from '../../../projects_assests/details'
-import * as icons from 'react-icons/fa';
 
 function Page({ params }: { params: { project: string } }) {
     const projectDetails = map.get(params.project);
