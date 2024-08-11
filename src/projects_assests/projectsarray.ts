@@ -31,7 +31,10 @@ const arr: arraytypes[] = [
       'Learnt and implemented the CRUD operations',
       'Learnt about leveraging the cloud services for file management(Aws)',
     ],
-    images: ['userVolunteerPage_qfoqel', 'adminTrustVerifyPage_dijty3'],
+    images: [
+      '/assests/userVolunteerPage (1).png',
+      '/assests/adminTrustVerifyPage (1).png',
+    ],
     TechIcons: [
       icons.FaHtml5,
       icons.FaNodeJs,

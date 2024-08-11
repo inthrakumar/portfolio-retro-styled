@@ -1,6 +1,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
-
+import Image from 'next/image'
+import { WiDayThunderstorm } from 'react-icons/wi';
 function Project_Carousel({ images }: { images: string[] }) {
   if (!images || images.length === 0) {
     return <div>No images found!</div>;
@@ -9,10 +10,10 @@ function Project_Carousel({ images }: { images: string[] }) {
   return (
     <Carousel showThumbs={false} autoPlay infiniteLoop>
       {images.map((image, index) => (
-        <div key={index}>
-          <img src={"https://www.dropbox.com/scl/fi/7fcvd1dbyedvuhvqfzhh3/userVolunteerPage-1.png?rlkey=03lr3joahxfi2ddkzsvtzxma7&st=5ix2uwpn&dl=0?raw=1"} onError={(error) => {
+        <div key={index} className='w-full h-full'>
+          <Image src={image} width={"100"} height={100} onError={(error) => {
             console.log(error);
-          }} alt={`Project Image ${index + 1}`} />
+          }} alt={`Project Image ${index + 1}`} className='w-full h-full' />
         </div>
       ))}
     </Carousel>
