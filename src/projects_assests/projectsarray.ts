@@ -2,7 +2,9 @@ import * as icons from 'react-icons/fa';
 import * as siicons from 'react-icons/si';
 import * as diicons from 'react-icons/di';
 import * as riicons from 'react-icons/ri';
+import * as tbicons from 'react-icons/tb';
 import type { IconType } from 'react-icons';
+import * as giicons from 'react-icons/gi';
 type arraytypes = {
   name: string;
   logo: string;
@@ -74,6 +76,7 @@ const arr: arraytypes[] = [
       riicons.RiTailwindCssFill,
       siicons.SiShadcnui,
       siicons.SiAxios,
+      siicons.SiEslint,
     ],
     Links: {
       Github: 'https://github.com/inthrakumar/news-buzz',
@@ -81,7 +84,7 @@ const arr: arraytypes[] = [
     },
   },
   {
-    name: 'Retro Style Portfolio',
+    name: 'RetroStylePortfolio',
     logo: 'https://asset.cloudinary.com/dwux16io3/eaf64def8c049759b75f545a38f392ca',
     about:
       'Personal Portfolio created in a retro style using Nextjs and nescss',
@@ -95,12 +98,20 @@ const arr: arraytypes[] = [
       'Explored about using the retro css formats',
     ],
     images: [
-      'https://asset.cloudinary.com/dwux16io3/e862126e331e30986e26badafd432902',
-      'https://asset.cloudinary.com/dwux16io3/73889fa638af0011aaec53301c037581',
+      '/assests/portfolio_home.png',
+      '/assests/portfolio_leetcode.png',
+      '/assests/portfolio_projects.png',
+      '/assests/portfolio_individual_project.png',
     ],
-    TechIcons: [icons.FaHtml5, icons.FaNodeJs],
+    TechIcons: [
+      tbicons.TbBrandNextjs,
+      riicons.RiTailwindCssFill,
+      siicons.SiAxios,
+      giicons.GiRetroController,
+      siicons.SiEslint,
+    ],
     Links: {
-      Github: 'https://github.com',
+      Github: 'https://github.com/inthrakumar/portfolio-retro-styled',
       Live: '#',
     },
   },
