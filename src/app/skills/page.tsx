@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef, useEffect } from 'react'
 import { FaAws, FaLinux, FaPython, FaHtml5, FaCss3, FaReact, FaDocker, FaBootstrap, FaNpm, FaGitAlt, FaGithubSquare, FaGitlab, FaFigma } from "react-icons/fa";
-import { SiJavascript, SiExpress, SiKubernetes, SiGooglecloud, SiGraphql, SiJest, SiCanva, SiDjango, SiPostgresql } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiExpress, SiKubernetes, SiGooglecloud, SiGraphql, SiJest, SiCanva, SiDjango, SiPostgresql } from "react-icons/si";
 import { TbBrandCpp, TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
 import { DiNodejs, DiNginx, DiMongodb, DiMysql, DiPhotoshop, DiIllustrator } from 'react-icons/di';
 import { RiTailwindCssFill } from 'react-icons/ri';
@@ -39,10 +39,10 @@ function Page() {
                     <h2 className='text-2xl font-bold max-lg:text-xl  max-sm:text-lg '>Languages</h2>
                     <div className='flex max-w-[70vw] flex-wrap gap-8 max-sm:gap-4 m-5'>
                         <span ref={addIconRef} title='javascript'><SiJavascript size={50} /></span>
+                        <span ref={addIconRef} title='typescript'> <SiTypescript size={50} /></span>
+
                         <span ref={addIconRef} title='cpp'><TbBrandCpp size={50} /></span>
                         <span ref={addIconRef} title='python'> <FaPython size={50} /></span>
-                        <span ref={addIconRef} title='html5'> <FaHtml5 size={50} /></span>
-                        <span ref={addIconRef} title='css3'> <FaCss3 size={50} /></span>
                     </div>
                 </div>
                 <div className='flex flex-col gap-3'>
