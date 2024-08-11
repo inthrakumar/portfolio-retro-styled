@@ -8,7 +8,7 @@ function Project_Carousel({ images }: { images: string[] }) {
   }
 
   return (
-    <Carousel showThumbs={false} autoPlay infiniteLoop>
+    <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
       {images.map((image, index) => (
         <div key={index} className='w-full h-full'>
           <Image src={image} width={"100"} height={100} onError={(error) => {

@@ -1,6 +1,7 @@
 import * as icons from 'react-icons/fa';
 import * as siicons from 'react-icons/si';
 import * as diicons from 'react-icons/di';
+import * as riicons from 'react-icons/ri';
 import type { IconType } from 'react-icons';
 type arraytypes = {
   name: string;
@@ -64,12 +65,18 @@ const arr: arraytypes[] = [
       'Used ShadCnUi library for ui designing  of the website',
     ],
     images: [
-      'https://drive.google.com/uc?export=view&id=1LhGW92SsUQ6nJI1ce9c5vRp3X6axvskw',
-      'https://drive.google.com/uc?export=view&id=1LhGW92SsUQ6nJI1ce9c5vRp3X6axvskw',
+      '/assests/frontpage_newsbuzz.png',
+      '/assests/category_newsbuzz.png',
+      '/assests/individual_page_newsbuzz.png',
     ],
-    TechIcons: [icons.FaHtml5, icons.FaNodeJs],
+    TechIcons: [
+      icons.FaReact,
+      riicons.RiTailwindCssFill,
+      siicons.SiShadcnui,
+      siicons.SiAxios,
+    ],
     Links: {
-      Github: 'https://github.com',
+      Github: 'https://github.com/inthrakumar/news-buzz',
       Live: '#',
     },
   },
