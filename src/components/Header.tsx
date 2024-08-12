@@ -29,7 +29,7 @@ function Header() {
                 setIsScrolled(false);
             }
         };
-
+        handleScroll();
         window.addEventListener('scroll', handleScroll);
 
         return () => {

@@ -1,7 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Image from 'next/image'
-import { WiDayThunderstorm } from 'react-icons/wi';
 function Project_Carousel({ images }: { images: string[] }) {
   if (!images || images.length === 0) {
     return <div>No images found!</div>;
