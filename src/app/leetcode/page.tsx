@@ -4,7 +4,7 @@ import { AcceptedSubmissions, getAccountDetails, NoofQns } from './api'
 import { useQuery } from 'react-query'
 import LeetCodeData from '@/components/LeetCode'
 import { UserProfile } from '@/types';
-
+import Loading from '@/components/Loading'
 function LeetCode() {
 
     const { isLoading, data, isError } = useQuery(['account'], getAccountDetails);
@@ -13,6 +13,8 @@ function LeetCode() {
     console.log(data, submissionsData, submissionsDataqns);
     return (
         <section className='min-h-screen  min-w-[90vw] flex flex-col items-center justify-between'>
+            {isLoading && <div className='min-h-[75vh] flex items-center justify-center'><Loading /></div>
+            }
             {(data && submissionsData && submissionsDataqns) ? (
                 <LeetCodeData data={data} Submissions={submissionsData} Qns={submissionsDataqns} />
             ) : null}

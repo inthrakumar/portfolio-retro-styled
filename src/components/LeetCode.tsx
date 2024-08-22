@@ -13,6 +13,7 @@ type LeetCodeDataSource = {
 }
 
 function LeetCode({ data, Submissions, Qns }: LeetCodeDataSource) {
+
     return (
         <div className='h-inherit w-100vw flex flex-col gap-7 mt-6 max-lg:mt-8 max-sm:p-4'>
             <div className='text-3xl max-lg:text-2xl max-sm:text-lg'>{data?.name}</div>
