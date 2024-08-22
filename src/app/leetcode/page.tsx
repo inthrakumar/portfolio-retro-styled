@@ -10,7 +10,6 @@ function LeetCode() {
     const { isLoading, data, isError } = useQuery(['account'], getAccountDetails);
     const { isLoading: submissionsLoading, data: submissionsData, isError: submissionsError } = useQuery(['submissions'], AcceptedSubmissions);
     const { data: submissionsDataqns } = useQuery(['qns'], NoofQns);
-    console.log(data, submissionsData, submissionsDataqns);
     return (
         <section className='min-h-screen  min-w-[90vw] flex flex-col items-center justify-between'>
             {isLoading && <div className='min-h-[75vh] flex items-center justify-center'><Loading /></div>
