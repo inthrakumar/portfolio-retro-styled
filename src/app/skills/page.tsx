@@ -7,8 +7,8 @@ import { DiNodejs, DiNginx, DiMongodb, DiMysql, DiPhotoshop, DiIllustrator } fro
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { FaGitkraken } from 'react-icons/fa6';
 import { IconContext } from 'react-icons'
-import gsap from 'gsap';
-
+import gsap from 'gsap'
+import { IconCloudDemo } from '@/components/IconsGraphics';
 function Page() {
     const iconRefs = useRef<HTMLSpanElement[]>([]);
 
